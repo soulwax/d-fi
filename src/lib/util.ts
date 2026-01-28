@@ -1,6 +1,6 @@
 import dotProp from 'dot-prop';
 import chalk from 'chalk';
-import {dirname, basename, join} from 'path';
+import path from 'path';
 
 type saveLayoutProps = {
   track: {[key: string]: any};
@@ -34,18 +34,18 @@ export const formatSecondsReadable = (time: number) => {
   return `${minutes >= 10 ? minutes : '0' + minutes}m ${seconds >= 10 ? seconds : '0' + seconds}s`;
 };
 
-export const saveLayout = ({track, album, path, minimumIntegerDigits, trackNumber}: saveLayoutProps) => {
+export const saveLayout = ({track, album, path: filePath, minimumIntegerDigits, trackNumber}: saveLayoutProps) => {
   // Clone album info
   const albumInfo = {...album};
 
   // Use relative path
-  if (path.startsWith('{')) {
-    path = './' + path;
+  if (filePath.startsWith('{')) {
+    filePath = './' + filePath;
   }
 
   // Transform values
   /* eslint-disable-next-line */
-  const file = path.match(/(?<=\{)[^\}]*/g);
+  const file = filePath.match(/(?<=\{)[^\}]*/g);
   if (file) {
     if (
       track.DISK_NUMBER &&
@@ -61,26 +61,26 @@ export const saveLayout = ({track, album, path, minimumIntegerDigits, trackNumbe
       const value_album: string | undefined = dotProp.get(albumInfo, key);
       const value_track: string | undefined = value_album || dotProp.get(track, key);
       if (key === 'TRACK_NUMBER' || key === 'TRACK_POSITION' || key === 'NO_TRACK_NUMBER') {
-        path = path.replace(
+        filePath = filePath.replace(
           `{${key}}`,
           value_track ? Number(value_track).toLocaleString('en-US', {minimumIntegerDigits}) : '',
         );
         trackNumber = false;
       } else {
-        path = path.replace(`{${key}}`, value_track ? sanitizeFilename(value_track) : '');
+        filePath = filePath.replace(`{${key}}`, value_track ? sanitizeFilename(value_track) : '');
       }
     }
   }
 
   if (trackNumber && (track.TRACK_NUMBER || track.TRACK_POSITION)) {
-    const [dir, base] = [dirname(path), basename(path)];
+    const [dir, base] = [path.posix.dirname(filePath), path.posix.basename(filePath)];
     const position = track.TRACK_POSITION ? track.TRACK_POSITION : Number(track.TRACK_NUMBER);
-    path = join(dir, position.toLocaleString('en-US', {minimumIntegerDigits}) + ' - ' + base);
+    filePath = path.posix.join(dir, position.toLocaleString('en-US', {minimumIntegerDigits}) + ' - ' + base);
   } else {
-    path = join(path);
+    filePath = path.posix.join(filePath);
   }
 
-  return path.replace(/[?%*|"<>]/g, '').trim();
+  return filePath.replace(/[?%*|"<>]/g, '').trim();
 };
 
 export const progressBar = (total: number, width: number) => {
@@ -88,12 +88,15 @@ export const progressBar = (total: number, width: number) => {
   const complete = Array(width).fill('█').join('');
   const unit = total / width;
 
+  // Force color output for consistent behavior across TTY/non-TTY environments
+  const colorChalk = new chalk.Instance({level: 1});
+
   return (value: number) => {
     let chars = unit === 0 ? width : Math.floor(value / unit);
     if (value >= total) {
       chars = complete.length;
     }
-    return chalk.cyanBright(complete.slice(0, chars)) + chalk.gray(incomplete.slice(chars));
+    return colorChalk.cyanBright(complete.slice(0, chars)) + colorChalk.gray(incomplete.slice(chars));
   };
 };
 

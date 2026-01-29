@@ -14,11 +14,11 @@
     "test": "SIMULATE=true ava"
   },
   "bin": {
-    "d-fi": "./dist/src/d-fi.js"
+    "d-fi": "dist/src/d-fi.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/bntg/npm/d-fi"
+    "url": "git+https://gitlab.com/bntg/npm/d-fi.git"
   },
   "engines": {
     "node": ">=12"

@@ -1,6 +1,6 @@
 {
-  "name": "d-fi",
-  "version": "2.1.7",
+  "name": "@soulwax/d-fi",
+  "version": "1.0.0",
   "description": "The crucial streaming module for dabox systems.",
   "author": "Konstantin Kling",
   "license": "Copyright (c) 2024 Konstantin Kling",
@@ -13,7 +13,9 @@
     "dev": "ts-node src/d-fi.ts",
     "test": "SIMULATE=true ava"
   },
-  "bin": "dist/src/d-fi.js",
+  "bin": {
+    "d-fi": "./dist/src/d-fi.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://gitlab.com/bntg/npm/d-fi"

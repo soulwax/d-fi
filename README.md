@@ -83,8 +83,8 @@ All options are optional. You can suppress prompts via providing `quality` and `
 
 ---
 
-> Made with :heart: & :coffee: by Konstantin
+> Made with :heart: & :coffee: by Christian
 
 ### License
 
-Copyright © 2024 Konstantin Kling, Saskia Falkenhagen, Jens Arnolds
+Copyright © 2024 Christian Kling, Saskia Falkenhagen, Jens Arnolds

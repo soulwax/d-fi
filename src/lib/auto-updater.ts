@@ -43,7 +43,7 @@ interface apiData {
 
 const updateCheck = async (pkg: any) => {
   const beta = pkg.version.includes('beta');
-  const releases: apiData[] = await got('https://api.github.com/repos/d-fi/releases/releases').json();
+  const releases: apiData[] = await got('https://api.github.com/repos/soulwax/d-fi/releases').json();
   const data = releases.filter((r) => r.prerelease === beta)[0];
 
   if (data.tag_name > pkg.version) {

@@ -25,9 +25,9 @@ console.log(
     '\n' +
     gradient('orange', 'yellow', 'red')(' ──────────────────────────────────────────────') +
     '\n' +
-    gradient('red', 'yellow', 'orange')(' │ repo   https://notabug.org/sayem314/d-fi  │ ') +
+    gradient('red', 'yellow', 'orange')(' │ repo   https://github.com/soulwax/d-fi   │ ') +
     '\n' +
-    gradient('red', 'yellow', 'orange')(' │ github https://github.com/sayem314        │ ') +
+    gradient('red', 'yellow', 'orange')(' │ github https://github.com/soulwax        │ ') +
     '\n' +
     gradient('red', 'yellow', 'orange')(' │ coffee https://ko-fi.com/sayemchowdhury   │ ') +
     '\n' +

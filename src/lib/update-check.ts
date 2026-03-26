@@ -14,7 +14,7 @@ const updateCheck = async (pkg: any) => {
             gradient('#f50', 'orange', 'red')(`     Update available ${pkg.version} \u2192  ${update.latest}`) +
             '\n' +
             chalk.redBright('     Run ') +
-            chalk.cyanBright(`${(process as any).pkg ? 'd-fi -U' : 'npm i -g d-fi@' + distTag}`) +
+            chalk.cyanBright(`${(process as any).pkg ? 'd-fi -U' : 'npm i -g @soulwax/d-fi@' + distTag}`) +
             chalk.redBright(' to update') +
             '\n' +
             gradient('#f50', 'orange', 'red')(' ──────────────────────────────────────────────'),

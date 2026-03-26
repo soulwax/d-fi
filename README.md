@@ -1,17 +1,17 @@
-# d-fi 
+# @soulwax/d-fi 
 
-<img src="./.github/assets/logo.png" alt="d-fi logo" width="200" height="200" style="display: block; margin-left: auto; margin-right: auto;" />
+<img src="https://raw.githubusercontent.com/soulwax/d-fi/main/.github/assets/logo.png" alt="d-fi logo" width="200" height="200" style="display: block; margin-left: auto; margin-right: auto;" />
 
 > A crucial component of darkfloor streaming service systems.
-> This is a reupload from my private Github repository.
+> Source repository: https://github.com/soulwax/d-fi
 
-![Screenshot](./.github/assets/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/soulwax/d-fi/main/.github/assets/screenshot.png)
 
 **d-fi is a program for downloading music from streaming music services. Remember that the artists and studios put a lot of work into making music - purchase the original music to support them.**
 
 ## v2 Migration Guide
 
-Please read [here](./docs/migration-guide-v2.md) before contributing to the v2 branch.
+Please read [here](https://github.com/soulwax/d-fi/blob/main/docs/migration_v2.md) before contributing to the v2 branch.
 
 ## Features
 
@@ -40,26 +40,26 @@ First install `nodejs` following [this tutorial](https://nodejs.org/en/download/
 
 Once `nodejs` installation is complete run this command.
 
-    sudo npm i -g d-fi
+    sudo npm i -g @soulwax/d-fi
 
 or if you are using yarn
 
-    yarn global add d-fi
+    yarn global add @soulwax/d-fi
 
 Now you can run using command `d-fi` to start.
 
 ### _Method 2_
 
-Download pre-built binary from [here](https://github.com/d-fi/releases/releases) and then double click on Windows to run. For Linux and macOS user, first open your choice of terminal and the execute with `./d-fi`
+Download pre-built binary from [here](https://github.com/soulwax/d-fi/releases) and then double click on Windows to run. For Linux and macOS user, first open your choice of terminal and the execute with `./d-fi`
 
 ## CLI Parameters
 
-All options are optional. You can suppress prompts via providing `quality` and `url` if you are using scripts. You can also use config file. Read the docs [here](./docs/config.md) for more info.
+All options are optional. You can suppress prompts via providing `quality` and `url` if you are using scripts. You can also use config file. Read the docs [here](https://github.com/soulwax/d-fi/blob/main/docs/config.md) for more info.
 
 | Parameter             |      Short      |                                                      Supported values                                                      |                                                                  Description                                                                  |
 | :-------------------- | :-------------: | :------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
 | `--quality`           |      `-q`       |                                                        128/320/flac                                                        |                                                     The quality of the files to download                                                      |
-| `--output`            |      `-o`       | Output file format according to `saveLayout`. See more [here](https://notabug.org/sayem314/d-fi/src/master/docs/config.md) |                                                       The path to download the files to                                                       |
+| `--output`            |      `-o`       | Output file format according to `saveLayout`. See more [here](https://github.com/soulwax/d-fi/blob/main/docs/config.md) |                                                       The path to download the files to                                                       |
 | `--url`               | `-u or nothing` |                                              album/artist/playlist/track url                                               |                                                              Downloads from url                                                               |
 | `--input-file`        |      `-i`       |                            Downloads all urls listed in text file. Example: `d-fi -i links.txt`                            |                                                              Downloads from url                                                               |
 | `--concurrency`       |  `-c` 1 to 50   |                                                Downloads X songs at a time                                 | |

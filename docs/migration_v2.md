@@ -2,7 +2,7 @@
 
 There are some breaking changes in v2. Configuration file from v1.x will not work, you will have to
 create a new config file.
-Please read about config [on our notabug config page](https://notabug.org/sayem314/d-fi/src/master/docs/config.md).
+Please read about config [on our GitHub config page](https://github.com/soulwax/d-fi/blob/main/docs/config.md).
 In this guide I will talk about CLI commands.
 
 ## Save Layout

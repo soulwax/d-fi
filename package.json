@@ -1,6 +1,6 @@
 {
   "name": "@soulwax/d-fi",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The crucial streaming module for dabox systems.",
   "author": "Christian Kling",
   "license": "Copyright (c) 2024 Christian Kling",
@@ -11,14 +11,26 @@
     "build": "tsc",
     "postinstall": "node setup-termux.js",
     "dev": "ts-node src/d-fi.ts",
-    "test": "SIMULATE=true ava"
+    "test": "node scripts/run-ava.cjs"
   },
   "bin": {
     "d-fi": "dist/src/d-fi.js"
   },
+  "files": [
+    "dist/**/*",
+    "setup-termux.js",
+    "CHANGELOG.md"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/bntg/npm/d-fi.git"
+    "url": "git+https://github.com/soulwax/d-fi.git"
+  },
+  "homepage": "https://github.com/soulwax/d-fi#readme",
+  "bugs": {
+    "url": "https://github.com/soulwax/d-fi/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=12"

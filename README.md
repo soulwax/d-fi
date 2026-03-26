@@ -1,4 +1,6 @@
-# d-fi <img alt= src="./.github/assets/logo.png" width="80" height="80" style="vertical-align:middle;margin:5px;background-color:white" />
+# d-fi 
+
+<img src="./.github/assets/logo.png" alt="d-fi logo" width="200" height="200" style="display: block; margin-left: auto; margin-right: auto;" />
 
 > A crucial component of darkfloor streaming service systems.
 > This is a reupload from my private Github repository.
@@ -9,7 +11,7 @@
 
 ## v2 Migration Guide
 
-Please read [here](https://notabug.org/sayem314/d-fi/src/master/docs/migration_v2.md)
+Please read [here](./docs/migration-guide-v2.md) before contributing to the v2 branch.
 
 ## Features
 
@@ -52,7 +54,7 @@ Download pre-built binary from [here](https://github.com/d-fi/releases/releases)
 
 ## CLI Parameters
 
-All options are optional. You can suppress prompts via providing `quality` and `url` if you are using scripts. You can also use config file. Read the docs [here](https://notabug.org/sayem314/d-fi/src/master/docs/config.md)
+All options are optional. You can suppress prompts via providing `quality` and `url` if you are using scripts. You can also use config file. Read the docs [here](./docs/config.md) for more info.
 
 | Parameter             |      Short      |                                                      Supported values                                                      |                                                                  Description                                                                  |
 | :-------------------- | :-------------: | :------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |

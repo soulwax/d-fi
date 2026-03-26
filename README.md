@@ -1,9 +1,9 @@
-# d-fi <img alt= src="<https://gitlab.com/bntg/npm/d-fi/raw/master/assets/logo.png>" width="80" height="80" style="vertical-align:middle;margin:5px;background-color:white" />
+# d-fi <img alt= src="./.github/assets/logo.png" width="80" height="80" style="vertical-align:middle;margin:5px;background-color:white" />
 
-> A crucial component of dabox streaming service systems.
-> This is a reupload from my private Github repository. The npm package is published by me.
+> A crucial component of darkfloor streaming service systems.
+> This is a reupload from my private Github repository.
 
-![Screenshot](https://notabug.org/sayem314/d-fi/raw/master/assets/screenshot.png)
+![Screenshot](./.github/assets/screenshot.png)
 
 **d-fi is a program for downloading music from streaming music services. Remember that the artists and studios put a lot of work into making music - purchase the original music to support them.**
 

@@ -11,6 +11,7 @@
 
 - Removed the last documentation link that still pointed at the old `d-fi/d-fi-core` repository path.
 - Prepared the CLI package for the next scoped publish line without reintroducing the old unscoped dependency tree.
+- Corrected the npm license metadata to use a valid `SEE LICENSE IN LICENSE` expression.
 
 ## 1.0.6 - 2026-03-26
 

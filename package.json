@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "The crucial streaming module for dabox systems.",
   "author": "Christian Kling",
-  "license": "Copyright (c) 2024 Christian Kling",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "lint": "eslint .",
     "prepublishOnly": "eslint . && tsc",

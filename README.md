@@ -1,4 +1,4 @@
-# @soulwax/d-fi 
+# @soulwax/d-fi
 
 <img src="https://raw.githubusercontent.com/soulwax/d-fi/main/.github/assets/logo.png" alt="d-fi logo" width="200" height="200" style="display: block; margin-left: auto; margin-right: auto;" />
 
@@ -40,7 +40,7 @@ First install `nodejs` following [this tutorial](https://nodejs.org/en/download/
 
 Once `nodejs` installation is complete run this command.
 
-    sudo npm i -g @soulwax/d-fi
+    npm i -g @soulwax/d-fi # may require sudo on linux and macOS
 
 or if you are using yarn
 
@@ -49,7 +49,6 @@ or if you are using yarn
 or pnpm
 
     pnpm add -g @soulwax/d-fi
-    
 
 Now you can run using command `d-fi` to start.
 
@@ -90,8 +89,8 @@ All options are optional. You can suppress prompts via providing `quality` and `
 
 ---
 
-> Made with :heart: & :coffee: by Christian
+> Made with :heart: & :coffee: by the Bluesix Team. If you want to contribute, please read the [contributing guidelines](.github/CONTRIBUTING.md) first.
 
 ### License
 
-Copyright © 2024 Christian Kling, Saskia Falkenhagen, Jens Arnolds
+Copyright © 2026 Christian Kling, Saskia Falkenhagen, Jens Arnolds

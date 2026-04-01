@@ -5,7 +5,7 @@
 ### Changed
 
 - Updated the CLI package to depend on the scoped core library package `@soulwax/d-fi-core`.
-- Updated runtime and test imports to use the scoped core package name consistently.
+- Updated runtime and type imports to use the scoped core package name consistently, including the published `@soulwax/d-fi-core/types` subpath.
 
 ### Fixed
 

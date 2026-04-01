@@ -104,9 +104,9 @@
   resolved "https://registry.npmjs.org/@sindresorhus/is/-/is-4.6.0.tgz"
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
-"@soulwax/d-fi-core@file:../d-fi-core/soulwax-d-fi-core-2.1.0.tgz":
+"@soulwax/d-fi-core@^2.1.0":
   version "2.1.0"
-  resolved "file:../d-fi-core/soulwax-d-fi-core-2.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/@soulwax/d-fi-core/-/d-fi-core-2.1.0.tgz"
   integrity sha512-+bYjjUAk/aOBykwjwYs5v5WzqWl3tYeJmXiiJjBUb6WU/NU5rlNIdjpF6ydc6IDJMjDihGWcNX61MpF5Iruh4w==
   dependencies:
     browser-id3-writer "^4.4.0"

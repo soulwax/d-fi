@@ -1,5 +1,5 @@
 import test from 'ava';
-import {parseInfo} from 'd-fi-core';
+import {parseInfo} from '@soulwax/d-fi-core';
 import {saveLayout, formatSecondsReadable, progressBar} from '../../src/lib/util';
 
 test.serial('SAVE LAYOUT 1', async (t) => {

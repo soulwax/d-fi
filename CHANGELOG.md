@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.0 - 2026-04-01
+
+### Changed
+
+- Updated the CLI package to depend on the scoped core library package `@soulwax/d-fi-core`.
+- Updated runtime and test imports to use the scoped core package name consistently.
+
+### Fixed
+
+- Removed the last documentation link that still pointed at the old `d-fi/d-fi-core` repository path.
+- Prepared the CLI package for the next scoped publish line without reintroducing the old unscoped dependency tree.
+
 ## 1.0.6 - 2026-03-26
 
 ### Changed

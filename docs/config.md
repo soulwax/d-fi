@@ -63,7 +63,7 @@ There are also additional values available only for the playlist.
 | :------ | :------------: | :-----------: |
 | `TITLE` | Playlist Title | wtf playlist  |
 
-You can also find other less recently used values [here](https://github.com/d-fi/d-fi-core/tree/master/src/types)
+You can also find other less recently used values [here](https://github.com/soulwax/d-fi-core/tree/main/src/types)
 
 ### _playlist_
 

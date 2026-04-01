@@ -3,14 +3,14 @@ import stream from 'stream';
 import {existsSync, mkdirSync, writeFileSync, createWriteStream, readFileSync, statSync, unlinkSync} from 'fs';
 import {promisify} from 'util';
 import {dirname} from 'path';
-import {getTrackDownloadUrl, addTrackTags} from 'd-fi-core';
+import {getTrackDownloadUrl, addTrackTags} from '@soulwax/d-fi-core';
 import {decryptDownload} from './decrypt';
 import logUpdate from 'log-update';
 import chalk from 'chalk';
 import signale from '../lib/signale';
 import {saveLayout, progressBar} from './util';
-import type {trackType} from 'd-fi-core/dist/types';
-import {GeoBlocked} from 'd-fi-core/dist/lib/get-url';
+import type {trackType} from '@soulwax/d-fi-core/dist/types';
+import {GeoBlocked} from '@soulwax/d-fi-core/dist/lib/get-url';
 
 const pipeline = promisify(stream.pipeline);
 const simulate = process.env.SIMULATE;

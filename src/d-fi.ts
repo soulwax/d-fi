@@ -4,7 +4,7 @@ import {readFileSync, writeFileSync} from 'fs';
 import {dirname, join, resolve, sep} from 'path';
 import {Command} from 'commander';
 import gradient from 'gradient-string';
-import {getUser, initDeezerApi, searchMusic, parseInfo, getDiscography} from 'd-fi-core';
+import {getUser, initDeezerApi, searchMusic, parseInfo, getDiscography} from '@soulwax/d-fi-core';
 import prompts from 'prompts';
 import logUpdate from 'log-update';
 import PQueue from 'p-queue';
@@ -17,7 +17,13 @@ import updateCheck from './lib/update-check';
 import autoUpdater from './lib/auto-updater';
 import {commonPath, formatSecondsReadable, sanitizeFilename} from './lib/util';
 import pkg from '../package.json';
-import type {artistType, trackType, albumType, playlistInfo, playlistInfoMinimal} from 'd-fi-core/dist/types';
+import type {
+  artistType,
+  trackType,
+  albumType,
+  playlistInfo,
+  playlistInfoMinimal,
+} from '@soulwax/d-fi-core/dist/types';
 
 // App info
 console.log(

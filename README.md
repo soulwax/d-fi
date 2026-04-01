@@ -46,6 +46,11 @@ or if you are using yarn
 
     yarn global add @soulwax/d-fi
 
+or pnpm
+
+    pnpm add -g @soulwax/d-fi
+    
+
 Now you can run using command `d-fi` to start.
 
 ### _Method 2_
@@ -56,28 +61,28 @@ Download pre-built binary from [here](https://github.com/soulwax/d-fi/releases) 
 
 All options are optional. You can suppress prompts via providing `quality` and `url` if you are using scripts. You can also use config file. Read the docs [here](https://github.com/soulwax/d-fi/blob/main/docs/config.md) for more info.
 
-| Parameter             |      Short      |                                                      Supported values                                                      |                                                                  Description                                                                  |
-| :-------------------- | :-------------: | :------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
-| `--quality`           |      `-q`       |                                                        128/320/flac                                                        |                                                     The quality of the files to download                                                      |
+| Parameter             |      Short      |                                                    Supported values                                                     |                                                                  Description                                                                  |
+| :-------------------- | :-------------: | :---------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
+| `--quality`           |      `-q`       |                                                      128/320/flac                                                       |                                                     The quality of the files to download                                                      |
 | `--output`            |      `-o`       | Output file format according to `saveLayout`. See more [here](https://github.com/soulwax/d-fi/blob/main/docs/config.md) |                                                       The path to download the files to                                                       |
-| `--url`               | `-u or nothing` |                                              album/artist/playlist/track url                                               |                                                              Downloads from url                                                               |
-| `--input-file`        |      `-i`       |                            Downloads all urls listed in text file. Example: `d-fi -i links.txt`                            |                                                              Downloads from url                                                               |
-| `--concurrency`       |  `-c` 1 to 50   |                                                Downloads X songs at a time                                 | |
-| `--set-arl`           |      `-a`       |                                                        `arl` string                                                        |                                                                Set arl cookies                                                                |
-| `--headless`          |      `-d`       |                                                         _Nothing_                                                          | Run in headless mode. You must provide both `--url` and `--quality` if you run in headless mode. This mode is meant for scripting automation. |
-| `--resolve-full-path` |     `-rfp`      |                                                         _Nothing_                                                          |                                               Create playlist file with absolute path location                                                |
-| `--create-playlist`   |      `-cp`      |                                                         _Nothing_                                                          |                                                    Create playlist for albums and artists                                                     |
-| `--config-file`       |     `-conf`     |                                 Config location. Example: `d-fi -conf my-d-fi.config.json`                                 |                                                    Specify custom location to config file                                                     |
-| `--update`            |      `-U`       |                                                         _Nothing_                                                          |                                                       Download new update (binary only)                                                       |
-| `--help`              |      `-h`       |                                                         _Nothing_                                                          |                                                              Shows the CLI help                                                               |
+| `--url`               | `-u or nothing` |                                             album/artist/playlist/track url                                             |                                                              Downloads from url                                                               |
+| `--input-file`        |      `-i`       |                          Downloads all urls listed in text file. Example: `d-fi -i links.txt`                           |                                                              Downloads from url                                                               |
+| `--concurrency`       |  `-c` 1 to 50   |                                               Downloads X songs at a time                                               |                                                                                                                                               |
+| `--set-arl`           |      `-a`       |                                                      `arl` string                                                       |                                                                Set arl cookies                                                                |
+| `--headless`          |      `-d`       |                                                        _Nothing_                                                        | Run in headless mode. You must provide both `--url` and `--quality` if you run in headless mode. This mode is meant for scripting automation. |
+| `--resolve-full-path` |     `-rfp`      |                                                        _Nothing_                                                        |                                               Create playlist file with absolute path location                                                |
+| `--create-playlist`   |      `-cp`      |                                                        _Nothing_                                                        |                                                    Create playlist for albums and artists                                                     |
+| `--config-file`       |     `-conf`     |                               Config location. Example: `d-fi -conf my-d-fi.config.json`                                |                                                    Specify custom location to config file                                                     |
+| `--update`            |      `-U`       |                                                        _Nothing_                                                        |                                                       Download new update (binary only)                                                       |
+| `--help`              |      `-h`       |                                                        _Nothing_                                                        |                                                              Shows the CLI help                                                               |
 
 ## Search Parameters
 
-|    Prefix   |    Description   |
-| :---------: | :--------------: |
-|  `artist:`  |   Search artist  |
-|  `album:`   |   Search album   |
-| `playlist:` |  Search playlist |
+|   Prefix    |   Description   |
+| :---------: | :-------------: |
+|  `artist:`  |  Search artist  |
+|  `album:`   |  Search album   |
+| `playlist:` | Search playlist |
 
 ### Disclaimer
 

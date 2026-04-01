@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.0 - 2026-04-01
+
+### Changed
+
+- Bumped the CLI dependency to `@soulwax/d-fi-core@^2.2.0` so the published command-line package picks up the native HTTP transport release line.
+- Switched internal type imports to the published `@soulwax/d-fi-core/types` subpath instead of reaching into `dist/` internals.
+
+### Fixed
+
+- Revalidated the CLI against the packed core artifact before publish so release verification matches the package shape that npm consumers install.
+
 ## 1.1.0 - 2026-04-01
 
 ### Changed

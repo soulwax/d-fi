@@ -1,6 +1,6 @@
 {
   "name": "@soulwax/d-fi",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The crucial streaming module for dabox systems.",
   "author": "Christian Kling",
   "license": "SEE LICENSE IN LICENSE",
@@ -39,7 +39,7 @@
     "adm-zip": "^0.5.16",
     "chalk": "^4.1.2",
     "commander": "^9.5.0",
-    "@soulwax/d-fi-core": "^2.1.0",
+    "@soulwax/d-fi-core": "^2.2.0",
     "dot-prop": "^6.0.1",
     "egoroof-blowfish": "^4.0.2",
     "got": "^11.8.6",

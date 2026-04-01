@@ -17,13 +17,7 @@ import updateCheck from './lib/update-check';
 import autoUpdater from './lib/auto-updater';
 import {commonPath, formatSecondsReadable, sanitizeFilename} from './lib/util';
 import pkg from '../package.json';
-import type {
-  artistType,
-  trackType,
-  albumType,
-  playlistInfo,
-  playlistInfoMinimal,
-} from '@soulwax/d-fi-core/dist/types';
+import type {artistType, trackType, albumType, playlistInfo, playlistInfoMinimal} from '@soulwax/d-fi-core/dist/types';
 
 // App info
 console.log(
